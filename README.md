@@ -1,6 +1,7 @@
 # use-lax
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![npm](https://img.shields.io/npm/v/use-lax.svg)](https://www.npmjs.org/package/use-lax)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 
 React hook to use with [lax.js](https://github.com/alexfoxy/laxxx).
 
