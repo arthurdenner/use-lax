@@ -8,10 +8,29 @@ React hook to use with [lax.js](https://github.com/alexfoxy/laxxx).
 
 ```javascript
 import React from 'react';
-import useLax from 'use-lax';
+import { useLax, useLaxElement } from 'use-lax';
+
+function App() {
+  const [showBubble, setBubble] = React.useState(false);
+  const toggleBubble = () => {
+    setBubble(!showBubble);
+  };
+
+  useLax(); // use once in the top level element
+
+  return (
+    <div>
+      <button className="toggle-bubble" onClick={toggleBubble}>
+        Toggle Bubble
+      </button>
+      <p>{showBubble ? '..now scroll down..' : '^ press the button ^'}</p>
+      {showBubble ? <Bubble /> : null}
+    </div>
+  );
+}
 
 function Bubble() {
-  const ref = useLax();
+  const ref = useLaxElement(); // use it in every component you want to animate
 
   return (
     <div ref={ref} className="bubble" data-lax-preset="leftToRight fadeInOut" />
@@ -19,7 +38,7 @@ function Bubble() {
 }
 ```
 
-See a full usage [here](https://codesandbox.io/s/q9882qjxzq).
+See the full example [here](https://codesandbox.io/s/q9882qjxzq).
 
 ## Contributors
 
