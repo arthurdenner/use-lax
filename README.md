@@ -43,6 +43,8 @@ See the full example [here](https://codesandbox.io/s/q9882qjxzq).
 
 See the [lax demo](https://alexfox.dev/laxxx/) built with `React` and `use-lax` [here](https://codesandbox.io/s/039krok5ml).
 
+See the [Mario demo](https://alexfox.dev/laxxx/sprite.html) built with `React` and `use-lax` [here](https://codesandbox.io/s/r48kz0okrm).
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
