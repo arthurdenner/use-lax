@@ -2,9 +2,9 @@ import lax from 'lax.js';
 import * as React from 'react';
 
 function useLax() {
-  React.useEffect(() => {
-    lax.setup();
+  lax.setup();
 
+  React.useEffect(() => {
     const updateLax = () => {
       lax.update(window.scrollY);
     };
