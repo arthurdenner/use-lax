@@ -3985,10 +3985,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
-lax.js@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-1.2.3.tgz#ee19230a20f637f6bfd77281b1aa7a8d62172ad4"
-  integrity sha512-997ORcgFcL6Hag1QBe0KbNl9WEtm7okf9fLKvo/hv05CUSWEwsyXAtZLKOqsnbgcaJ6yHZUNtJUzMaplf78Z4w==
+lax.js@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-1.2.5.tgz#cf4279be9f604a0bb20fd3e808af97879c246c3d"
+  integrity sha512-Ytf7ZUhn2YLtyYoUFT8KpoRYvzw0awTr66J0vrp4NpwPaXPp504yhvsrqtP6ZDny3/Y7UOQsWHylV9iLl3cuoQ==
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
