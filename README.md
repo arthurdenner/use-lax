@@ -9,7 +9,7 @@ React hook to use with [lax.js](https://github.com/alexfoxy/laxxx).
 
 ```javascript
 import React from 'react';
-import { useLax, useLaxElement } from 'use-lax';
+import { useLax } from 'use-lax';
 
 function App() {
   const [showBubble, setBubble] = React.useState(false);
@@ -31,11 +31,10 @@ function App() {
 }
 
 function Bubble() {
-  const ref = useLaxElement(); // use it in every component you want to animate
+  // add `lax` in the className attribute and the data-lax-preset attribute
+  // on every component that you want to animate
 
-  return (
-    <div ref={ref} className="bubble" data-lax-preset="leftToRight fadeInOut" />
-  );
+  return <div className="lax bubble" data-lax-preset="leftToRight fadeInOut" />;
 }
 ```
 
