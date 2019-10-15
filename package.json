@@ -48,7 +48,7 @@
     "eslint": "6.5.1",
     "eslint-plugin-react-hooks": "2.1.2",
     "husky": "3.0.8",
-    "lax.js": "1.2.3",
+    "lax.js": "1.2.5",
     "lint-staged": "9.4.2",
     "prettier": "1.18.2",
     "react": "16.10.2",
