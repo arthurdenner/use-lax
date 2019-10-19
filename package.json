@@ -43,7 +43,7 @@
     "@types/react": "16.9.9",
     "@typescript-eslint/eslint-plugin": "2.4.0",
     "@typescript-eslint/parser": "2.4.0",
-    "all-contributors-cli": "6.9.1",
+    "all-contributors-cli": "6.9.2",
     "conventional-changelog-cli": "2.0.25",
     "eslint": "6.5.1",
     "eslint-plugin-react-hooks": "2.1.2",
