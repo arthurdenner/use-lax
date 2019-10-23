@@ -1,3 +1,9 @@
+# [3.1.0](https://github.com/arthurdenner/use-lax/compare/v3.0.0...v3.1.0) (2019-10-23)
+
+### Features
+
+- bring back useLaxElement hook ([#94](https://github.com/arthurdenner/use-lax/issues/94)) ([a88470d](https://github.com/arthurdenner/use-lax/commit/a88470d6e9ed937c2c8567b88bf910d41dbacfd3))
+
 # [3.0.0](https://github.com/arthurdenner/use-lax/compare/v2.0.2...v3.0.0) (2019-10-15)
 
 ### Bug Fixes

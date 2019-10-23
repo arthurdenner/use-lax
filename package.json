@@ -1,6 +1,6 @@
 {
   "name": "use-lax",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "React hook to use with lax.js.",
   "main": "./dist/use-lax.cjs.js",
   "module": "./dist/use-lax.esm.js",
