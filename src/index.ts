@@ -22,4 +22,20 @@ function useLax() {
   }, []);
 }
 
-export { useLax };
+function useLaxElement<T>() {
+  const ref = React.useRef<T>();
+
+  React.useEffect(() => {
+    const currentNode = ref.current;
+
+    lax.addElement(currentNode);
+
+    return () => {
+      lax.removeElement(currentNode);
+    };
+  }, []);
+
+  return ref;
+}
+
+export { useLax, useLaxElement };
