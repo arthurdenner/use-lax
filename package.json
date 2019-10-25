@@ -45,7 +45,7 @@
     "@typescript-eslint/parser": "2.5.0",
     "all-contributors-cli": "6.9.3",
     "conventional-changelog-cli": "2.0.25",
-    "eslint": "6.5.1",
+    "eslint": "6.6.0",
     "eslint-plugin-react-hooks": "2.2.0",
     "husky": "3.0.9",
     "lax.js": "1.2.5",
