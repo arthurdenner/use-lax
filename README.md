@@ -17,7 +17,10 @@ function App() {
     setBubble(!showBubble);
   };
 
-  useLax(); // use once in the top level element
+  // use once in the top level element
+  // you can configure breakpoints and className
+  // useLax({ className: 'nice' });
+  useLax();
 
   return (
     <div>
@@ -31,16 +34,13 @@ function App() {
 }
 
 function Bubble() {
-  const ref = useLaxElement(); // use it in every component added dynamically
+  // use it in every component added dynamically
+  // it will add the className passed to `useLax`, which defaults to `lax`
+  const ref = useLaxElement();
 
-  // add `lax` in the className attribute and the data-lax-preset attribute
-  // on every component that you want to animate
+  // `lax` (or `nice` in our example) will be added to the classList of the element
   return (
-    <div
-      ref={ref}
-      className="lax bubble"
-      data-lax-preset="leftToRight fadeInOut"
-    />
+    <div ref={ref} className="bubble" data-lax-preset="leftToRight fadeInOut" />
   );
 }
 ```
