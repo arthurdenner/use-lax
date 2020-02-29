@@ -1,4 +1,16 @@
 language: node_js
-
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
 node_js:
-  - "node"
+  - '10'
+  - '11'
+  - '12'
+script: npm run validate
+after_success:
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && npx semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
