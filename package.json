@@ -46,7 +46,7 @@
     "eslint-plugin-react-hooks": "3.0.0",
     "husky": "4.2.5",
     "lax.js": "1.2.5",
-    "lint-staged": "10.1.2",
+    "lint-staged": "10.1.3",
     "prettier": "2.0.4",
     "react": "16.13.1",
     "rimraf": "3.0.2",
