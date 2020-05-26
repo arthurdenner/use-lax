@@ -1,9 +1,11 @@
 # use-lax
 
 [![npm](https://img.shields.io/npm/v/use-lax.svg)](https://www.npmjs.org/package/use-lax)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
 
-React hook to use with [lax.js](https://github.com/alexfoxy/laxxx).
+React hook to use with [lax.js](https://github.com/alexfoxy/lax.js).
+
+> For support for lax.js v2, check the [`next`](https://github.com/arthurdenner/use-lax/tree/next) branch.
 
 ### Usage
 
@@ -47,9 +49,9 @@ function Bubble() {
 
 See the full example [here](https://codesandbox.io/s/q9882qjxzq).
 
-See the [lax demo](https://alexfox.dev/laxxx/) built with `React` and `use-lax` [here](https://codesandbox.io/s/039krok5ml).
+See the [lax demo](https://alexfox.dev/lax.js/) built with `React` and `use-lax` [here](https://codesandbox.io/s/039krok5ml).
 
-See the [Mario demo](https://alexfox.dev/laxxx/sprite.html) built with `React` and `use-lax` [here](https://codesandbox.io/s/r48kz0okrm).
+See the [Mario demo](https://alexfox.dev/lax.js/sprite.html) built with `React` and `use-lax` [here](https://codesandbox.io/s/r48kz0okrm).
 
 ## Contributors
 
@@ -67,6 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
