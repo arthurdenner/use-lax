@@ -43,7 +43,7 @@
     "all-contributors-cli": "6.15.0",
     "conventional-changelog-cli": "2.0.34",
     "eslint": "7.1.0",
-    "eslint-plugin-react-hooks": "4.0.2",
+    "eslint-plugin-react-hooks": "4.0.4",
     "husky": "4.2.5",
     "lax.js": "1.2.5",
     "lint-staged": "10.2.6",
