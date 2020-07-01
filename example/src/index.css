@@ -1,0 +1,17 @@
+body {
+  padding: 20px;
+  height: 200vh;
+}
+
+.bubble {
+  width: 200pt;
+  height: 200pt;
+  background: blue;
+  border-radius: 100pt;
+  margin-top: 50vh;
+  position: absolute;
+}
+
+.toggle-bubble {
+  font-size: 18px;
+}
