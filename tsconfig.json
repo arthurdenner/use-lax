@@ -1,7 +1,8 @@
 {
+  "exclude": ["dist", "example"],
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./types",
+    "declarationDir": "./dist",
     "emitDeclarationOnly": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext", "dom"],
