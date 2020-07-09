@@ -4,11 +4,7 @@
   "description": "React hook to use with lax.js.",
   "main": "./dist/use-lax.cjs.js",
   "module": "./dist/use-lax.esm.js",
-  "types": "./types/index.d.ts",
-  "files": [
-    "dist",
-    "types"
-  ],
+  "types": "./dist/index.d.ts",
   "keywords": [
     "react",
     "hooks",
@@ -30,7 +26,7 @@
   },
   "homepage": "https://github.com/arthurdenner/use-lax#readme",
   "peerDependencies": {
-    "lax.js": "^1.0.0",
+    "lax.js": "^2.0.0",
     "react": "^16.8.0"
   },
   "devDependencies": {
