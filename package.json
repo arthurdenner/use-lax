@@ -52,6 +52,6 @@
     "rimraf": "3.0.2",
     "rollup": "2.19.0",
     "rollup-plugin-babel": "4.4.0",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   }
 }
