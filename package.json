@@ -48,7 +48,7 @@
     "lax.js": "1.2.5",
     "lint-staged": "10.4.2",
     "prettier": "2.1.2",
-    "react": "16.14.0",
+    "react": "17.0.1",
     "rimraf": "3.0.2",
     "rollup": "2.32.1",
     "rollup-plugin-babel": "4.4.0",
