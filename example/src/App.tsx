@@ -8,7 +8,14 @@ function App() {
     setBubble(!showBubble);
   };
 
-  useLax();
+  useLax({
+    drivers: [
+      {
+        name: 'scrollY',
+        getValueFn: () => window.scrollY,
+      },
+    ],
+  });
 
   return (
     <div>
