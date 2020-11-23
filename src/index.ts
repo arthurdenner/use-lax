@@ -17,17 +17,20 @@ export interface LaxDriverOptions {
   /**
    * If enabled, the driver will calculate the speed at which its value is changing.
    *
-   * Used to add momentum to elements using the `momentum` element option.
+   * Used to add inertia to elements using the `inertia` element option.
    *
    * Defaults to `false`.
    * */
-  momentumEnabled: boolean;
+  inertiaEnabled: boolean;
 }
 
 export interface LaxDriver {
   /** Name of the driver. */
   name: string;
-  /** Function that will the value for the driver. */
+  /** Function that will provide the value for the animations.
+   *
+   * Keep the method as computationally light as possible.
+   * */
   getValueFn: (laxFrame: number) => number;
   /** Options to the driver. */
   options?: LaxDriverOptions;
@@ -82,10 +85,14 @@ function useLaxElement() {
     //   currentNode.classList.add(selector);
     // }
 
-    lax.addElement(currentNode);
+    if (currentNode) {
+      lax.addElement(currentNode);
+    }
 
     return () => {
-      lax.removeElement(currentNode);
+      if (currentNode) {
+        lax.removeElement(currentNode);
+      }
     };
   }, []);
 
