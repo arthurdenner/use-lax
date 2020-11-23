@@ -13,7 +13,7 @@
   "author": "Arthur Denner <arthurdenner7@gmail.com>",
   "scripts": {
     "add-contributor": "all-contributors add",
-    "build": "rollup -c && tsc",
+    "build": "tsc && rollup -c",
     "validate": "npm run build"
   },
   "repository": {

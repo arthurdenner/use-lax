@@ -1,7 +1,7 @@
 import lax from 'lax.js';
 import * as React from 'react';
 
-console.log({ lax });
+console.log(lax);
 
 export interface LaxDriverOptions {
   /**
