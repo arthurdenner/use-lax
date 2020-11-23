@@ -1,8 +1,6 @@
 import lax from 'lax.js';
 import * as React from 'react';
 
-console.log(lax);
-
 /**
  * List of supported easings
  * https://github.com/alexfoxy/lax.js#supported-easings
@@ -112,6 +110,7 @@ type LaxValue = [
   // https://github.com/alexfoxy/lax.js#special-values
   (number | string)[],
   // TODO: Describe mobile breakpoints for animation value map (2nd item)
+  // https://github.com/alexfoxy/lax.js#value-maps
   (number | string)[],
   LaxValueOptions?
 ];
@@ -138,16 +137,9 @@ export interface LaxInitOptions {
   drivers?: LaxDriver[];
   /** Array of elements to set when initializing lax. */
   elements?: LaxElement[];
-  // breakpoints?: { [k: string]: any };
-  // className?: string;
 }
 
-// let selector = 'lax';
-
 function useLax({ drivers, elements }: LaxInitOptions = {}) {
-  // const requestRef = React.useRef<number>();
-  // selector = className || selector;
-
   React.useEffect(() => {
     lax.init();
 
@@ -162,21 +154,6 @@ function useLax({ drivers, elements }: LaxInitOptions = {}) {
         lax.addElements(selector, animationData, options);
       });
     }
-
-    // lax.setup({ breakpoints, selector: `.${selector}` });
-
-    // const updateLax = () => {
-    //   lax.update(window.scrollY);
-    //   requestRef.current = window.requestAnimationFrame(updateLax);
-    // };
-
-    // requestRef.current = window.requestAnimationFrame(updateLax);
-
-    // return () => {
-    //   if (requestRef.current) {
-    //     window.cancelAnimationFrame(requestRef.current);
-    //   }
-    // };
   }, []);
 }
 
@@ -188,10 +165,6 @@ function useLaxElement({
 
   React.useEffect(() => {
     const currentNode = ref.current;
-
-    // if (currentNode && currentNode.classList) {
-    //   currentNode.classList.add(selector);
-    // }
 
     if (currentNode) {
       lax.addElement(currentNode, animationData, options);
