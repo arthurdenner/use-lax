@@ -104,11 +104,17 @@ interface LaxValueOptions {
   easing?: LaxEasings;
 }
 
+/**
+ * Driver value map. Can be explicit numbers e.g. `[0, 100]` or you can use strings
+ * for simple formulas as well as use special values. e.g: `[0, 'screenWidth']`.
+ *
+ * See a list of available special values [here](https://github.com/alexfoxy/lax.js#special-values).
+ */
+export type DriverValueMap = (number | string)[];
+
 // TODO: Find a better name for this
 type LaxValue = [
-  // TODO: Describe special values for driver value map (1st item)
-  // https://github.com/alexfoxy/lax.js#special-values
-  (number | string)[],
+  DriverValueMap,
   // TODO: Describe mobile breakpoints for animation value map (2nd item)
   // https://github.com/alexfoxy/lax.js#value-maps
   (number | string)[],
