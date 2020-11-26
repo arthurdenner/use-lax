@@ -11,7 +11,7 @@ export interface LaxDriverOptions {
    *
    * Defaults to `1`.
    */
-  frameStep: number;
+  frameStep?: number;
   /**
    * If enabled, the driver will calculate the speed at which its value is changing.
    *
@@ -19,7 +19,7 @@ export interface LaxDriverOptions {
    *
    * Defaults to `false`.
    * */
-  inertiaEnabled: boolean;
+  inertiaEnabled?: boolean;
 }
 
 /** Map of driver names with their value and inertia  */
@@ -77,7 +77,7 @@ export interface LaxValueOptions {
    * Some CSS properties require more complex strings as values.
    * For example, `box-shadow` has multiple values that could be modified by a lax animation.
    */
-  cssFn?: (value: number) => string;
+  cssFn?: (value: number, domElement: HTMLElement) => number | string;
   /** List of supported easings [here](https://github.com/alexfoxy/lax.js#supported-easings) */
   easing?: string;
 }
