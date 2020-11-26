@@ -48,7 +48,7 @@ export interface LaxDriver {
   options?: LaxDriverOptions;
 }
 
-interface LaxValueOptions {
+export interface LaxValueOptions {
   /**
    * Set this option to modulus the value from the driver, for example if you want
    * to loop the animation value as the driver value continues to increase.
@@ -83,6 +83,17 @@ interface LaxValueOptions {
 }
 
 /**
+ * Animation value map. Can be explicit numbers, e.g. `[0, 100]`,
+ * strings for simple formulas as well as use special values, e.g: `[0, 'screenWidth']`,
+ * or an object with mobile breakpoints as keys.
+ *
+ * See a list of available special values [here](https://github.com/alexfoxy/lax.js#special-values).
+ */
+export type AnimationValueMap =
+  | (number | string)[]
+  | { [breakpoint: number]: (number | string)[] };
+
+/**
  * Driver value map. Can be explicit numbers e.g. `[0, 100]` or you can use strings
  * for simple formulas as well as use special values. e.g: `[0, 'screenWidth']`.
  *
@@ -90,14 +101,7 @@ interface LaxValueOptions {
  */
 export type DriverValueMap = (number | string)[];
 
-// TODO: Find a better name for this
-type LaxValue = [
-  DriverValueMap,
-  // TODO: Describe mobile breakpoints for animation value map (2nd item)
-  // https://github.com/alexfoxy/lax.js#value-maps
-  (number | string)[],
-  LaxValueOptions?
-];
+export type LaxValue = [DriverValueMap, AnimationValueMap, LaxValueOptions?];
 
 export interface LaxElement {
   /** Selector of the element. */
@@ -106,11 +110,12 @@ export interface LaxElement {
   options?: LaxElementOptions;
   /** Map of drivers to animation values */
   animationData?: {
-    // TODO: Try to make this autocomplete
     [driverName: string]: {
-      // TODO: Add description and supported properties
-      // https://github.com/alexfoxy/lax.js#css-properties
-      // When property not supported, `cssFn` can be used
+      /**
+       * The name of the CSS property you want to animate, e.g. `opacity` or `rotate`.
+       * When a property is not supported, use the `cssFn` option to compute its value.
+       * See a list of supported properties [here](https://github.com/alexfoxy/lax.js#css-properties).
+       */
       [cssProperty: string]: LaxValue;
     };
   };
