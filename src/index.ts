@@ -1,28 +1,6 @@
 import lax from 'lax.js';
 import * as React from 'react';
 
-/**
- * List of supported easings
- * https://github.com/alexfoxy/lax.js#supported-easings
- */
-type LaxEasings =
-  | 'easeInQuad'
-  | 'easeOutQuad'
-  | 'easeInOutQuad'
-  | 'easeInCubic'
-  | 'easeOutCubic'
-  | 'easeInOutCubic'
-  | 'easeInQuart'
-  | 'easeOutQuart'
-  | 'easeInOutQuart'
-  | 'easeInQuint'
-  | 'easeOutQuint'
-  | 'easeInOutQuint'
-  | 'easeOutBounce'
-  | 'easeInBounce'
-  | 'easeOutBack'
-  | 'easeInBack';
-
 export interface LaxDriverOptions {
   /**
    * By default each driver updates its value every animation frame, around ~60 times per second.
@@ -100,8 +78,8 @@ interface LaxValueOptions {
    * For example, `box-shadow` has multiple values that could be modified by a lax animation.
    */
   cssFn?: (value: number) => string;
-  // TODO: Add description
-  easing?: LaxEasings;
+  /** List of supported easings [here](https://github.com/alexfoxy/lax.js#supported-easings) */
+  easing?: string;
 }
 
 /**
