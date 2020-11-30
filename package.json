@@ -34,7 +34,7 @@
     "react": "^16.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.7",
+    "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.7",
     "@babel/preset-typescript": "7.12.7",
     "@types/react": "17.0.0",
