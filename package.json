@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/arthurdenner/use-lax#readme",
   "peerDependencies": {
-    "lax.js": "^2.0.0",
+    "lax.js": "^2.0.3",
     "react": "^16.8.0"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "eslint": "7.14.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "4.3.0",
-    "lax.js": "2.0.2",
+    "lax.js": "2.0.3",
     "lint-staged": "10.5.1",
     "prettier": "2.2.0",
     "react": "17.0.1",

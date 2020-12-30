@@ -2284,10 +2284,10 @@ kind-of@^6.0.3:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-lax.js@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-2.0.2.tgz#26fc310d4dd6f3b3d809f4488d5586160682feae"
-  integrity sha512-RxWYnpRzc1JwDFLDhBPLdCGg94K8ZjWJwQNxJxQTDtsfoFiNh9cGv77VBQ2wFqCN8YE5CGSUGSVav6eGkfBF3A==
+lax.js@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-2.0.3.tgz#74aed57a628db42fcfa91b7a746cec443a611a38"
+  integrity sha512-q2q0jVRwruvFdQZeeE3OwIszRIkey6CItPmB+BcTUFPgHd2R8LI+bntAI7d2GJEjheu79mzQ++MROkODuZoXlA==
 
 levn@^0.4.1:
   version "0.4.1"
