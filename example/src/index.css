@@ -1,15 +1,24 @@
 body {
-  padding: 20px;
+  margin: 0;
+  padding: 50px;
   height: 200vh;
+  text-align: center;
+}
+
+.bubbles {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .bubble {
-  width: 200pt;
-  height: 200pt;
+  width: 100px;
+  height: 100px;
   background: blue;
   border-radius: 100pt;
-  margin-top: 50vh;
-  position: absolute;
 }
 
 .toggle-bubble {

@@ -13,7 +13,7 @@
   "author": "Arthur Denner <arthurdenner7@gmail.com>",
   "scripts": {
     "add-contributor": "all-contributors add",
-    "build": "rollup -c && tsc",
+    "build": "tsc && rollup -c",
     "validate": "npm run build"
   },
   "repository": {
@@ -26,13 +26,14 @@
   },
   "homepage": "https://github.com/arthurdenner/use-lax#readme",
   "peerDependencies": {
-    "lax.js": "^2.0.0",
+    "lax.js": "^2.0.3",
     "react": "^16.8.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.7",
     "@babel/preset-typescript": "7.12.7",
+    "@rollup/plugin-babel": "5.2.2",
     "@types/react": "17.0.0",
     "@typescript-eslint/eslint-plugin": "2.33.0",
     "@typescript-eslint/parser": "2.33.0",
@@ -41,13 +42,12 @@
     "eslint": "7.15.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "4.3.0",
-    "lax.js": "2.0.2",
+    "lax.js": "2.0.3",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1",
     "react": "17.0.1",
     "rimraf": "3.0.2",
-    "rollup": "2.34.2",
-    "rollup-plugin-babel": "4.4.0",
+    "rollup": "2.35.1",
     "typescript": "4.1.2"
   }
 }

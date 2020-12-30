@@ -1,6 +1,6 @@
 import { useLax } from 'use-lax';
 import React from 'react';
-import Bubble from './Bubble';
+import Bubbles from './Bubble';
 
 function App() {
   const [showBubble, setBubble] = React.useState(false);
@@ -8,15 +8,23 @@ function App() {
     setBubble(!showBubble);
   };
 
-  useLax();
+  useLax({
+    drivers: [
+      {
+        name: 'scrollY',
+        getValueFn: () => window.scrollY,
+        options: { inertiaEnabled: true },
+      },
+    ],
+  });
 
   return (
     <div>
       <button className="toggle-bubble" onClick={toggleBubble}>
-        Toggle Bubble
+        Toggle Bubbles
       </button>
-      <p>{showBubble ? '..now scroll down..' : '^ press the button ^'}</p>
-      {showBubble ? <Bubble /> : null}
+      <p>{showBubble ? 'Now scroll down...' : '^ Press the button ^'}</p>
+      {showBubble ? <Bubbles /> : null}
     </div>
   );
 }
