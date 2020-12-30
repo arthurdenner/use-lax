@@ -5,8 +5,6 @@
 
 React hook to use with [lax.js](https://github.com/alexfoxy/lax.js).
 
-> For support for lax.js v2, check the [`next`](https://github.com/arthurdenner/use-lax/tree/next) branch.
-
 ### Usage
 
 ```javascript
