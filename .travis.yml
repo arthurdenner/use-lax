@@ -1,16 +1,13 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
+cache: yarn
 notifications:
   email: false
-node_js:
-  - '10'
-  - '11'
-  - '12'
-script: npm run validate
+node_js: '10'
+install: yarn --frozen-lockfile
+script: yarn validate
 after_success:
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && npx semantic-release
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - develop
+    - master
