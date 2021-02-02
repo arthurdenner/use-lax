@@ -10,6 +10,9 @@
     "hooks",
     "lax.js"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "Arthur Denner <arthurdenner7@gmail.com>",
   "scripts": {
     "add-contributor": "all-contributors add",
