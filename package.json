@@ -30,7 +30,7 @@
   "homepage": "https://github.com/arthurdenner/use-lax#readme",
   "peerDependencies": {
     "lax.js": "^2.0.3",
-    "react": "^16.8.0"
+    "react": "^16.8 || ^17.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.0",
