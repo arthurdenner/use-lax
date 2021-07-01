@@ -46,7 +46,7 @@
     "husky": "6.0.0",
     "lax.js": "2.0.3",
     "lint-staged": "11.0.0",
-    "prettier": "2.3.0",
+    "prettier": "2.3.2",
     "react": "17.0.2",
     "rimraf": "3.0.2",
     "rollup": "2.50.5",
