@@ -5,51 +5,61 @@
 
 React hook to use with [lax.js](https://github.com/alexfoxy/lax.js).
 
-### Usage
+## Usage
 
 ```javascript
 import React from 'react';
 import { useLax, useLaxElement } from 'use-lax';
 
 function App() {
-  const [showBubble, setBubble] = React.useState(false);
-  const toggleBubble = () => {
-    setBubble(!showBubble);
-  };
+  const [showBubble, setBubble] = useState(false);
+  const toggleBubble = () => setBubble(!showBubble);
 
-  // use once in the top level element
-  // you can configure breakpoints and className
-  // useLax({ className: 'nice' });
-  useLax();
+  // Use once in the top level element
+  // to configure drivers and initial elements
+  // https://github.com/alexfoxy/lax.js#setup
+  useLax({
+    drivers: [
+      {
+        name: 'scrollY',
+        getValueFn: () => window.scrollY,
+      },
+    ],
+  });
 
   return (
     <div>
       <button className="toggle-bubble" onClick={toggleBubble}>
         Toggle Bubble
       </button>
-      <p>{showBubble ? '..now scroll down..' : '^ press the button ^'}</p>
+      <p>{showBubble ? '...now scroll down...' : '^ press the button ^'}</p>
       {showBubble ? <Bubble /> : null}
     </div>
   );
 }
 
 function Bubble() {
-  // use it in every component added dynamically
-  // it will add the className passed to `useLax`, which defaults to `lax`
-  const ref = useLaxElement();
+  // Use it on every component added dynamically
+  // and provide the animation driven from the drivers
+  const ref = useLaxElement({
+    animationData: {
+      scrollY: {
+        presets: ['fadeInOut:200:0'],
+        translateX: [
+          [0, 'screenHeight'],
+          [0, 'screenWidth'],
+        ],
+      },
+    },
+  });
 
-  // `lax` (or `nice` in our example) will be added to the classList of the element
-  return (
-    <div ref={ref} className="bubble" data-lax-preset="leftToRight fadeInOut" />
-  );
+  return <div ref={ref} className="bubble" />;
 }
 ```
 
-See the full example [here](https://codesandbox.io/s/q9882qjxzq).
-
-See the [lax demo](https://alexfox.dev/lax.js/) built with `React` and `use-lax` [here](https://codesandbox.io/s/039krok5ml).
-
-See the [Mario demo](https://alexfox.dev/lax.js/sprite.html) built with `React` and `use-lax` [here](https://codesandbox.io/s/r48kz0okrm).
+- [Full example above](https://codesandbox.io/s/q9882qjxzq)
+- [Lax homepage example](https://codesandbox.io/s/039krok5ml) - [HTML version](https://alexfox.dev/lax.js/)
+- [Mario example](https://codesandbox.io/s/r48kz0okrm) - [HTML version](https://codesandbox.io/s/vcv4k)
 
 ## Contributors
 
