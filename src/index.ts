@@ -128,7 +128,19 @@ export interface LaxInitOptions {
   elements?: LaxElement[];
 }
 
+declare global {
+  interface Window {
+    lax: typeof lax;
+  }
+}
+
 function useLax({ drivers, elements }: LaxInitOptions = {}) {
+  React.useEffect(() => {
+    if (!window.lax) {
+      window.lax = lax;
+    }
+  }, []);
+
   React.useEffect(() => {
     lax.init();
 
