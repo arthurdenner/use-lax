@@ -42,7 +42,7 @@
     "@typescript-eslint/parser": "2.33.0",
     "all-contributors-cli": "6.20.0",
     "eslint": "8.18.0",
-    "eslint-plugin-react-hooks": "4.5.0",
+    "eslint-plugin-react-hooks": "4.6.0",
     "husky": "8.0.1",
     "lax.js": "2.0.3",
     "lint-staged": "13.0.0",
