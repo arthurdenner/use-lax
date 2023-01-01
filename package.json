@@ -43,7 +43,7 @@
     "all-contributors-cli": "6.24.0",
     "eslint": "8.26.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lax.js": "2.0.3",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
